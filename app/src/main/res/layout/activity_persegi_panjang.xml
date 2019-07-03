@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PersegiPanjang">
+
+    <TextView
+        android:id="@+id/tv_panjang"
+        android:text="Panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/tv_panjang"
+        android:inputType="numberDecimal"
+        android:id="@+id/et_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_lebar"
+        android:layout_below="@+id/et_panjang"
+        android:text="Lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/et_lebar"
+        android:layout_below="@id/tv_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_lebar"
+        android:text="Hitung"
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_hitung"
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
